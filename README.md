@@ -1,20 +1,18 @@
 ## Welcome to PmPy aka. Password manger python... (still working on a better name)
 
-### Updates:
-- The saving feature doesn't work, yet. Will fix it in the future.
-- Fixed other errors :) .
+### What's new?:
+- Added a PIN.
+- And safe storage of said PIN.
 
 
 
-> [!WARNING]
-> This project is still in **Alpha**
+
 
 
 ### What can it do
 It's simple really. It's a python password manager using the Cryptography library and the json library to store passwords and python.
 
 ### Syntax
-*Because every project of mine has one these days.*
 
 | Syntax | Description |
 | ----------- | ----------- |
