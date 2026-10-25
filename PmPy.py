@@ -7,11 +7,11 @@ SERVICE = "PmPy"
 USER = getpass.getuser()
 
 try: # Opens PIN setup then deletes the file (very shit fix but okay)
-    import PIN_PMPY_SETUP.py
-    Setup()
+    import PIN_PMPY_SETUP
+    PIN_PMPY_SETUP.Setup()
     os.remove("PIN_PMPY_SETUP.py")
-except FileNotFoundError: 
-   pass
+#except FileNotFoundError: 
+#   pass
 finally:
     TEMP = keyring.get_password(SERVICE, USER) # loads password from keyring
     
