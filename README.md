@@ -11,7 +11,7 @@
 
 
 ### What can it do
-It's simple really. It's a python password manager using Cryptography python library and json library to store passwords and raw python.
+It's simple really. It's a python password manager using the Cryptography library and the json library to store passwords and python.
 
 ### Syntax
 *Because every project of mine has one these days.*
