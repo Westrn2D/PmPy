@@ -30,7 +30,7 @@ It's simple really. It's a python password manager using the Cryptography librar
 - [x] Save passwords in a file (.txt, .json, .sql , etc.)
 - [x] Be able to run this as a binary (.exe)
 - [ ] MacOS support (for .app) has not been finished yet. 
-- [x] More security features.
+- [x] More security features.[1^]
 - [x] And make the syntax applicable, as it doesn't work nor have an interface
   for it  yet
 
@@ -39,3 +39,7 @@ It's simple really. It's a python password manager using the Cryptography librar
 This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for details.
 
 Copyright © 2026 Constantinos Philiastides
+
+### Footnotes
+[1^] If you run the program and don't set a PIN or for whatever reason the Setup file doesn't exist please download it from the
+latest release.
