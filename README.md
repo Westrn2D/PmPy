@@ -30,7 +30,7 @@ It's simple really. It's a python password manager using the Cryptography librar
 - [x] Save passwords in a file (.txt, .json, .sql , etc.)
 - [x] Be able to run this as a binary (.exe)
 - [ ] MacOS support (for .app) has not been finished yet. 
-- [ ] More security features.
+- [x] More security features.
 - [x] And make the syntax applicable, as it doesn't work nor have an interface
   for it  yet
 
