@@ -1,3 +1,30 @@
+# PIN sequence
+import getpass , keyring, os
+
+# Variables for keyring
+
+SERVICE = "PmPy"
+USER = getpass.getuser()
+
+try: # Opens PIN setup then deletes the file (very shit fix but okay)
+    import PIN_PMPY_SETUP
+    PIN_PMPY_SETUP.Setup()
+    os.remove("PIN_PMPY_SETUP.py")
+#except FileNotFoundError: 
+#   pass
+finally:
+    TEMP = keyring.get_password(SERVICE, USER) # loads password from keyring
+    
+    try:
+        PIN = getpass.getpass(prompt='PIN:' , stream=None)
+        if PIN == TEMP:
+            pass
+        elif PIN != TEMP:
+            quit()
+    finally:
+        PIN = None
+        TEMP = None
+# End of pin sequence
 from cryptography.fernet import Fernet, InvalidToken
 import json , time
 #Vars:
@@ -110,7 +137,7 @@ def DeleteProfile():
 #Load Saved profiles
 LoadStoredProfiles()
 #User input
-print("WARNING: If two (or more) profiles have the same name THE LATEST PROFILE CREATED WILL BE KEPT WHILE THE OTHER WILL GET DELTED")
+print("WARNING: If two (or more) profiles have the same name THE LATEST PROFILE CREATED WILL BE KEPT WHILE THE OTHER WILL GET DELETED")
 while Flag:
     print("----------------------------------")
     print("options are: SHOW, GET, DELETE, SAVE, NEW, EXIT")
