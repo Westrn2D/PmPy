@@ -23,7 +23,7 @@ It's simple really. It's a python password manager using the Cryptography librar
 |SAVE | Saves the temporary directory|
 |NEW | Initializes prompt for new login |
 |DELETE | Deletes specfied "profile" (Username password combo)|
-|EXIT | Quits the program without saving the un-saved profiles|
+|EXIT | Quits the program without saving any not saved profiles|
 
 ### Goals
 
