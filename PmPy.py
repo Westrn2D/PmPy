@@ -35,8 +35,22 @@ y = 0
 
 Flag = True 
 
-                      
+#Loading key path
 KEY_PATH = "PasswordManager.key"
+
+CustomPathQ = input("Do you want to input a custom path ( y / n ):")
+CustomPathQ = CustomPathQ.upper()
+if CustomPathQ == "Y":
+    CustomPath = input("Custom path e.g. 'E:\Key\PasswordManager.key'\n>")
+    if os.path.exists(CustomPath):
+        KEY_PATH = CustomPath
+    else:
+        print("Path does not exist returning to default.")
+elif CustomPathQ == "N":
+    pass
+
+                    
+
 # loads a key or generates a new one if a key is not found
 
 try:
@@ -49,7 +63,7 @@ except FileNotFoundError:
 
 f = Fernet(key)
 
-#print(f) # debug
+
 
 
 #======================================#
