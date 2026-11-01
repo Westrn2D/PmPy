@@ -1,8 +1,8 @@
 ## Welcome to PmPy aka. Password manger python... (still working on a better name)
 
 ### What's new?:
-- Added a PIN.
-- And safe storage of said PIN.
+- Can now change and use custom file location for .key file,
+to be able to safely store the key file.
 
 
 
