@@ -10,7 +10,7 @@ to be able to safely store the key file.
 
 
 ### What can it do
-It's simple really. It's a python password manager using the Cryptography library and the json library to store passwords and python.
+It's simple really. It's a password manager using the Cryptography library and the json library to store passwords and python.
 
 ### Syntax
 
